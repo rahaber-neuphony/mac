@@ -1,0 +1,19 @@
+appId: com.neuphony.desktop
+copyright: Copyright © 2024 Pankhtech India Pvt. Ltd.
+directories:
+  output: dist
+  buildResources: resources
+files:
+  - from: .
+    filter:
+      - package.json
+      - app
+mac:
+  gatekeeperAssess: false
+  hardenedRuntime: true
+  # entitlements: build-files/entitlements.mac.plist
+  # entitlementsInherit: build-files/entitlements.mac.plist
+  target:
+    target: "dmg"
+    arch: "x64"
+publish: null
